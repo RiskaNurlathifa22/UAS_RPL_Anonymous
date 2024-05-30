@@ -8,12 +8,12 @@ package dzakamotor;
  *
  * @author User
  */
-public class Inventory extends javax.swing.JFrame {
+public class Riwayat extends javax.swing.JFrame {
 
     /**
      * Creates new form Inventory
      */
-    public Inventory() {
+    public Riwayat() {
         initComponents();
     }
 
@@ -27,30 +27,28 @@ public class Inventory extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        rSMaterialButtonRectangle2 = new rojerusan.RSMaterialButtonRectangle();
-        rSMaterialButtonRectangle3 = new rojerusan.RSMaterialButtonRectangle();
-        rSMaterialButtonRectangle1 = new rojerusan.RSMaterialButtonRectangle();
         rSMaterialButtonRectangle5 = new rojerusan.RSMaterialButtonRectangle();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
         rSMaterialButtonRectangle6 = new rojerusan.RSMaterialButtonRectangle();
-        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(960, 550));
-        setPreferredSize(new java.awt.Dimension(960, 550));
 
         jPanel3.setBackground(new java.awt.Color(238, 235, 220));
         jPanel3.setMaximumSize(new java.awt.Dimension(960, 550));
         jPanel3.setPreferredSize(new java.awt.Dimension(960, 550));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dzakamotor/image/pojokriwayat.jpeg"))); // NOI18N
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, -420, 970, 530));
 
         jPanel4.setBackground(new java.awt.Color(238, 235, 220));
         jPanel4.setPreferredSize(new java.awt.Dimension(960, 115));
@@ -61,10 +59,10 @@ public class Inventory extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Arial Black", 1, 48)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(129, 1, 0));
-        jLabel4.setText("INVENTORY");
-        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 21, -1, -1));
+        jLabel4.setText("RIWAYAT TRANSAKSI");
+        jPanel4.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(168, 21, 638, -1));
 
-        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 540, -1));
+        jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, -1));
 
         jPanel5.setBackground(new java.awt.Color(129, 1, 0));
         jPanel5.setPreferredSize(new java.awt.Dimension(780, 413));
@@ -83,28 +81,7 @@ public class Inventory extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 85, 734, 302));
-
-        rSMaterialButtonRectangle2.setText("ADD");
-        jPanel5.add(rSMaterialButtonRectangle2, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 95, 126, 50));
-
-        rSMaterialButtonRectangle3.setBackground(new java.awt.Color(204, 204, 0));
-        rSMaterialButtonRectangle3.setText("EDIT");
-        rSMaterialButtonRectangle3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSMaterialButtonRectangle3ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(rSMaterialButtonRectangle3, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 172, 126, 50));
-
-        rSMaterialButtonRectangle1.setBackground(new java.awt.Color(153, 0, 51));
-        rSMaterialButtonRectangle1.setText("DELETE");
-        rSMaterialButtonRectangle1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSMaterialButtonRectangle1ActionPerformed(evt);
-            }
-        });
-        jPanel5.add(rSMaterialButtonRectangle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 248, 126, 50));
+        jPanel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 79, 842, 273));
 
         rSMaterialButtonRectangle5.setBackground(new java.awt.Color(51, 51, 51));
         rSMaterialButtonRectangle5.setText("BACK");
@@ -118,26 +95,23 @@ public class Inventory extends javax.swing.JFrame {
                 rSMaterialButtonRectangle5ActionPerformed(evt);
             }
         });
-        jPanel5.add(rSMaterialButtonRectangle5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 324, 126, 53));
+        jPanel5.add(rSMaterialButtonRectangle5, new org.netbeans.lib.awtextra.AbsoluteConstraints(439, 358, 126, 53));
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dzakamotor/image/newsearch.png"))); // NOI18N
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, 47));
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 6, 596, 35));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, -1, 41));
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 6, 704, 29));
 
-        jPanel5.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(21, 20, 652, -1));
+        jPanel5.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(54, 20, 760, -1));
 
         rSMaterialButtonRectangle6.setBackground(new java.awt.Color(255, 255, 255));
         rSMaterialButtonRectangle6.setForeground(new java.awt.Color(0, 0, 0));
         rSMaterialButtonRectangle6.setFont(new java.awt.Font("Roboto Medium", 0, 12)); // NOI18N
         rSMaterialButtonRectangle6.setLabel("Search");
-        jPanel5.add(rSMaterialButtonRectangle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(679, 20, 76, 47));
+        jPanel5.add(rSMaterialButtonRectangle6, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 14, 76, 47));
 
         jPanel3.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 115, 960, 437));
-
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/dzakamotor/image/pojokinventory.jpeg"))); // NOI18N
-        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, -440, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -155,17 +129,9 @@ public class Inventory extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rSMaterialButtonRectangle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rSMaterialButtonRectangle1ActionPerformed
-
     private void rSMaterialButtonRectangle5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rSMaterialButtonRectangle5ActionPerformed
-
-    private void rSMaterialButtonRectangle3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rSMaterialButtonRectangle3ActionPerformed
 
     private void rSMaterialButtonRectangle5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle5MouseClicked
         // TODO add your handling code here:
@@ -191,29 +157,30 @@ public class Inventory extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Inventory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Riwayat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Inventory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Riwayat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Inventory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Riwayat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Inventory.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Riwayat.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Inventory().setVisible(true);
+                new Riwayat().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -221,9 +188,6 @@ public class Inventory extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     private javax.swing.JTextField jTextField1;
-    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle1;
-    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle2;
-    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle3;
     private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle5;
     private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle6;
     // End of variables declaration//GEN-END:variables
